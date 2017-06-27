@@ -32,6 +32,7 @@ apiRoutes.js | GET /api/workouts to display JSON objects of workouts
 | | - "name" of workout
 | | - "photo" with a link to the picture
 | | - "scores" with an array of numbers to determine the matches
+| | 
 | | POST routes /api/workouts to handle user input and logic
 | | 
 images | [abs pro](https://pbs.twimg.com/media/C4ASJdSWIAILhom.jpg)
