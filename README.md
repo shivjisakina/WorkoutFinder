@@ -28,8 +28,7 @@ htmlRoutes.js | GET route /survey
 apiRoutes.js | GET /api/friends to display son objects of workouts
 | | POST routes /api/friends to handle user input and logic
 | | 
-images | |
-| | [abs pro](https://pbs.twimg.com/media/C4ASJdSWIAILhom.jpg)
+images | [abs pro](https://pbs.twimg.com/media/C4ASJdSWIAILhom.jpg)
 | | [boxing](https://s-media-cache-ak0.pinimg.com/736x/a0/ed/af/a0edaf61a41c5ca13234e7338d8b23e7.jpg)
 | | [strength training doubling as cardio](http://www.womenshealthmag.com/sites/womenshealthmag.com/files/2015/06/30/strength-training-workout-that-doubles-as-cardio11_0.jpg)
 | | [pac man](https://s-media-cache-ak0.pinimg.com/originals/78/59/a1/7859a1df0b681cb233288f15ff655063.jpg)
