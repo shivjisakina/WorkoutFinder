@@ -10,7 +10,7 @@ Because staring at gym equipment doesnt burn calories (wouldnt that be nice thou
 4. Beat Workout Boredom
 5. Help Keep Your Brain Healthy
 
-![Reference] (http://www.onemedical.com/blog/live-well/7-reasons-to-switch-up-your-workout/)
+! [Reference](http://www.onemedical.com/blog/live-well/7-reasons-to-switch-up-your-workout/)
 
 
 ### Pseudo code that I used throughout the development process:
