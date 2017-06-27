@@ -2,7 +2,7 @@
 
 Because staring at gym equipment doesnt burn calories (wouldnt that be nice though?).
 
-## 5 Reasons to Switch Up Your Workout 
+## [5 Reasons to Switch Up Your Workout](http://www.onemedical.com/blog/live-well/7-reasons-to-switch-up-your-workout/) 
 
 1. Break Through a Weight-Loss Plateau
 2. Prevent Overuse Injuries
@@ -10,7 +10,6 @@ Because staring at gym equipment doesnt burn calories (wouldnt that be nice thou
 4. Beat Workout Boredom
 5. Help Keep Your Brain Healthy
 
-[Reference](http://www.onemedical.com/blog/live-well/7-reasons-to-switch-up-your-workout/)
 
 
 ### Pseudo code that I used throughout the development process:
