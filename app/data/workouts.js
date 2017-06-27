@@ -71,5 +71,5 @@ var workouts = [
 ];
 
 // Exporting friends var using module.exports
-module.exports = friends;
+module.exports = workouts;
 
