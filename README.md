@@ -26,8 +26,8 @@ server.js | NPM install:
 htmlRoutes.js | GET route /survey
 | | USE route home.html
 | |
-apiRoutes.js | GET /api/friends to display son objects of workouts
-| | POST routes /api/friends to handle user input and logic
+apiRoutes.js | GET /api/workouts to display JSON objects of workouts
+| | POST routes /api/workouts to handle user input and logic
 | | 
 images | [abs pro](https://pbs.twimg.com/media/C4ASJdSWIAILhom.jpg)
 | | [boxing](https://s-media-cache-ak0.pinimg.com/736x/a0/ed/af/a0edaf61a41c5ca13234e7338d8b23e7.jpg)
