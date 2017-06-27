@@ -17,17 +17,9 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json'}));
 // Use static files
 app.use(express.static('app'));
 
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, 'app/public/home.html'));
-});
-
-app.get("/survey", function(req, res) {
-    res.send("Welcome to the Survey Page!");
-});
-
-app.post('/survey', function (req, res) {
-    console.log(req.body)
-})
+// requiring the route files (should i put this in a var???)
+require('./app/routing/html-routes.js')(html);
+require('./app/routing/api-routes.js')(api);
 
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
