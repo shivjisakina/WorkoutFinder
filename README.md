@@ -15,6 +15,8 @@ Because staring at gym equipment doesnt burn calories (wouldnt that be nice thou
 ### Pseudo code that I used throughout the development process:
 | | Psuedo Code
 ------------ | -------------
+| |
+--CODE-- | | 
 server.js | NPM install:
 | | express
 | | body-parser
@@ -50,6 +52,8 @@ apiRoutes.js | require('../data/workouts.js');
 home.html | style.css
 | | 
 survey.html | style.css
+| | 
+--ASSETS-- | |
 | | 
 images | [abs pro](https://pbs.twimg.com/media/C4ASJdSWIAILhom.jpg)
 | | [boxing](https://s-media-cache-ak0.pinimg.com/736x/a0/ed/af/a0edaf61a41c5ca13234e7338d8b23e7.jpg)
