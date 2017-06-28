@@ -1,0 +1,10 @@
+h1 {
+    font-size: 60px;
+    padding: 30px;
+}
+
+body {
+    background-image: url(../data/background.png);
+    background-size: cover;
+    color: beige;
+}
