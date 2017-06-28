@@ -35,7 +35,7 @@ apiRoutes.js | GET /api/workouts to display JSON objects of workouts
 | | 
 | | POST routes /api/workouts to handle user input and logic
 | | 
-linking files | | 
+--LINKING FILES-- | | 
 | | 
 server.js | |
 | | require('./app/routing/htmlRoutes.js')(app)
