@@ -13,7 +13,7 @@ Because staring at gym equipment doesnt burn calories (wouldnt that be nice thou
 
 
 ### Pseudo code that I used throughout the development process:
-File | Psuedo Code
+| | Psuedo Code
 ------------ | -------------
 server.js | NPM install:
 | | express
@@ -35,6 +35,21 @@ apiRoutes.js | GET /api/workouts to display JSON objects of workouts
 | | 
 | | POST routes /api/workouts to handle user input and logic
 | | 
+linking files | | 
+server.js | |
+| | require('./app/routing/htmlRoutes.js')(app)
+| | require('./app/routing/apiRoutes.js')(app) 
+| |
+htmlRoutes.js | |
+| | res.sendFile(path.join(_dirname, '/../public/home.html'));
+| | res.sendFile(path.join(_dirname, '/../public/survey.html'));
+| | 
+apiRoutes.js | | 
+| | require('../data/workouts.js');
+home.html | |
+| | style.css
+survey.html | |
+| | style.css
 images | [abs pro](https://pbs.twimg.com/media/C4ASJdSWIAILhom.jpg)
 | | [boxing](https://s-media-cache-ak0.pinimg.com/736x/a0/ed/af/a0edaf61a41c5ca13234e7338d8b23e7.jpg)
 | | [strength training doubling as cardio](http://www.womenshealthmag.com/sites/womenshealthmag.com/files/2015/06/30/strength-training-workout-that-doubles-as-cardio11_0.jpg)
