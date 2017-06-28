@@ -4,7 +4,9 @@ h1 {
 }
 
 body {
-    background-image: url(../data/background.png);
+    background-image: url(http://itsdroolworthy.com/wp-content/uploads/2015/09/yoyomats_press_11.jpg);
     background-size: cover;
-    color: beige;
+    background-repeat: no-repeat;
+    color: saddlebrown;
 }
+
