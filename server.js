@@ -20,7 +20,7 @@ app.use(express.static('app/public'));
 
 // Requiring the route files
 require('./app/routing/htmlRoutes.js')(app);
-//require('./app/routing/apiRoutes.js')(app);
+require('./app/routing/apiRoutes.js')(app);
 
 // Listening to the port
 app.listen(PORT, function() {

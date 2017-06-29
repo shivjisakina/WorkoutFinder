@@ -110,28 +110,27 @@
                     <br>
 
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary btn-md" id="add-btn">Submit</button>
+                        <button type="submit" class="btn btn-primary btn-md submitbtn" id="add-btn" href="/api">Submit</button>
                     </div>
 
             </div>
 
-            <div class="modal fade" id="myModal" role="dialog">
-
-                <div class="modal-dialog">
-
-                    <div class="modal-content">
-                    </div>
-                    <h4 class="modal-title">Get your workout on!</h4>
-                    <div class="modal-body">
-                    </div>
-
+            <div id="myModal" class="modal" id="chosenWorkout">
+                <div class="modal-content" id="workoutPopup">
+                    <span class="close">&times;</span>
+                    <p>Here's your workout!</p>
                 </div>
-
             </div>
 
         </div>
 
     </div>
+
+    <div class="container">
+        <a class="workoutlink" href="api/workouts">API For Workouts</a> <a class="repolink" href="https://github.com/shivjisakina/WorkoutFinder">Link to the github repo!</a>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
 
 </body>
 
