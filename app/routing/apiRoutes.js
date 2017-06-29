@@ -11,12 +11,13 @@ module.exports = function (app) {
 
     app.post('/api/workouts', function (req, res) {
 
+        console.log(req.body.name);
         console.log(req.body.q1);
         console.log(req.body.q2);
         console.log(req.body.q3);
         console.log(req.body.q4);
         console.log(req.body.q5)
-        
+
     });
 
     workouts.push(req.body);
