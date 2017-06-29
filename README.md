@@ -11,6 +11,14 @@ Because staring at gym equipment doesnt burn calories (wouldnt that be nice thou
 5. Help Keep Your Brain Healthy
 
 
+## Technologies Used:
+
+* HTML
+* CSS
+* Javascript
+* Node JS
+* NPM Packages (Body-Parser, Express, Path)
+
 
 ### Pseudo code that I used throughout the development process:
 | | Psuedo Code
