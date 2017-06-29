@@ -14,3 +14,7 @@ body {
     padding: 20px;
     margin-bottom: 60px;
 }
+
+.question {
+    font-size: 12px;
+}
