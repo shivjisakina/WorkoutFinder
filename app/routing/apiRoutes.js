@@ -25,7 +25,7 @@ module.exports = function (app) {
 
     app.post('/api/workouts', function (req, res) {
 
-        // Trying to get the questions out
+        // Trying to get the value of the name and questions out
         console.log(req.body.name);
         console.log(req.body.q1);
         console.log(req.body.q2);
