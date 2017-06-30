@@ -25,10 +25,6 @@ module.exports = function (app) {
 
     app.post('/api/workouts', function (req, res) {
 
-        //console.log(scores)
-
-        //console.log(req.body);
-
         console.log(workouts)
 
         var results = {};
@@ -36,8 +32,6 @@ module.exports = function (app) {
 
         // Looping through the object
         var scores = [parseInt(req.body.q1), parseInt(req.body.q2), parseInt(req.body.q3), parseInt(req.body.q4), parseInt(req.body.q5)];
-
-        //console.log(req.body)
 
         for (var i = 0; i < workouts.length; i++) {
 
@@ -50,13 +44,13 @@ module.exports = function (app) {
                 subtractArray.push(Math.abs(scores[j] - workouts[i].scores[j]))
             }
 
-            //console.log(subtractArray);
+            console.log(subtractArray);
 
             for (var k = 0; k < subtractArray.length; k++) {
                 difference += subtractArray[k];
             }
 
-            //console.log(difference);
+            console.log(difference);
 
             if (results == {}) {
                 results = workouts[i];
@@ -66,12 +60,12 @@ module.exports = function (app) {
                 differenceCalc = difference;
             }
 
-            //console.log(difference);
+            console.log(difference);
 
         }
 
             // Pushing results
-            //console.log("results" + results.name);
+            console.log("results " + results.name);
 
             var data = {name: req.body.name, image: req.body.image, scores: scores}
 
