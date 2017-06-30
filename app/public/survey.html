@@ -36,15 +36,6 @@
 
             <div class="col-lg-12">
 
-                <div class="form-group">
-                    <label for="name" name="name" class="name">Name (required)</label>
-                    <input type="text" class="form-control" id="name">
-                </div>
-
-                <div class="form-group">
-                    <label for="role" name="picture" class="picture">Picture (required)</label>
-                    <input type="text" class="form-control" id="role">
-                </div>
 
             </div>
 
@@ -58,64 +49,74 @@
 
             <div class="col-lg-12 questions">
 
-                    <form action="/survey" method="POST" role="form">
+                    <form class="workoutForm">
+
+                        <div class="form-group">
+                            <label for="name" name="name" class="name">Name (required)</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="role" name="picture" class="picture">Picture (required)</label>
+                            <input type="text" class="form-control" id="photo">
+                        </div>
 
                         <fieldset class="question">
-                            <h3 name="q1">Question 1: How much do you like outdoor sports?</h3>
-                            <input type="checkbox" name="answer1" value="1" class="numbers"> 1 <br>
-                            <input type="checkbox" name="answer2" value="2" class="numbers"> 2 <br>
-                            <input type="checkbox" name="answer3" value="3" class="numbers"> 3 <br>
-                            <input type="checkbox" name="answer4" value="4" class="numbers"> 4 <br>
-                            <input type="checkbox" name="answer5" value="5" class="numbers"> 5 <br>
+                            <h3>Question 1: How much do you like outdoor sports?</h3>
+                            <input type="radio" name="q1" value="1" class="numbers"> 1 <br>
+                            <input type="radio" name="q1" value="2" class="numbers"> 2 <br>
+                            <input type="radio" name="q1" value="3" class="numbers"> 3 <br>
+                            <input type="radio" name="q1" value="4" class="numbers"> 4 <br>
+                            <input type="radio" name="q1" value="5" class="numbers"> 5 <br>
                         </fieldset>
 
                         <fieldset class="question">
-                            <h3 name="q2">Question 2: How much self-control do you have? </h3>
-                            <input type="checkbox" name="answer1" value="1" class="numbers"> 1 <br>
-                            <input type="checkbox" name="answer2" value="2" class="numbers"> 2 <br>
-                            <input type="checkbox" name="answer3" value="3" class="numbers"> 3 <br>
-                            <input type="checkbox" name="answer4" value="4" class="numbers"> 4 <br>
-                            <input type="checkbox" name="answer5" value="5" class="numbers"> 5 <br>
+                            <h3>Question 2: How much self-control do you have? </h3>
+                            <input type="radio" name="q2" value="1" class="numbers"> 1 <br>
+                            <input type="radio" name="q2" value="2" class="numbers"> 2 <br>
+                            <input type="radio" name="q2" value="3" class="numbers"> 3 <br>
+                            <input type="radio" name="q2" value="4" class="numbers"> 4 <br>
+                            <input type="radio" name="q2" value="5" class="numbers"> 5 <br>
                         </fieldset>
 
                         <fieldset class="question">
-                            <h3 name="q3">Question 3: How much do you procrastinate?</h3>
-                            <input type="checkbox" name="answer1" value="1" class="numbers"> 1 <br>
-                            <input type="checkbox" name="answer2" value="2" class="numbers"> 2 <br>
-                            <input type="checkbox" name="answer3" value="3" class="numbers"> 3 <br>
-                            <input type="checkbox" name="answer4" value="4" class="numbers"> 4 <br>
-                            <input type="checkbox" name="answer5" value="5" class="numbers"> 5 <br>
+                            <h3>Question 3: How much do you procrastinate?</h3>
+                            <input type="radio" name="q3" value="1" class="numbers"> 1 <br>
+                            <input type="radio" name="q3" value="2" class="numbers"> 2 <br>
+                            <input type="radio" name="q3" value="3" class="numbers"> 3 <br>
+                            <input type="radio" name="q3" value="4" class="numbers"> 4 <br>
+                            <input type="radio" name="q3" value="5" class="numbers"> 5 <br>
                         </fieldset>
 
                         <fieldset class="question">
-                            <h3 name="q4">Question 4: Do you thrive in group environments?</h3>
-                            <input type="checkbox" name="answer1" value="1" class="numbers"> 1 <br>
-                            <input type="checkbox" name="answer2" value="2" class="numbers"> 2 <br>
-                            <input type="checkbox" name="answer3" value="3" class="numbers"> 3 <br>
-                            <input type="checkbox" name="answer4" value="4" class="numbers"> 4 <br>
-                            <input type="checkbox" name="answer5" value="5" class="numbers"> 5 <br>
+                            <h3>Question 4: Do you thrive in group environments?</h3>
+                            <input type="radio" name="q4" value="1" class="numbers"> 1 <br>
+                            <input type="radio" name="q4" value="2" class="numbers"> 2 <br>
+                            <input type="radio" name="q4" value="3" class="numbers"> 3 <br>
+                            <input type="radio" name="q4" value="4" class="numbers"> 4 <br>
+                            <input type="radio" name="q4" value="5" class="numbers"> 5 <br>
                         </fieldset>
 
                         <fieldset class="question">
-                            <h3 name="q5">Question 5: How consistent are you on a daily basis?</h3>
-                            <input type="checkbox" name="answer1" value="1" class="numbers"> 1 <br>
-                            <input type="checkbox" name="answer2" value="2" class="numbers"> 2 <br>
-                            <input type="checkbox" name="answer3" value="3" class="numbers"> 3 <br>
-                            <input type="checkbox" name="answer4" value="4" class="numbers"> 4 <br>
-                            <input type="checkbox" name="answer5" value="5" class="numbers"> 5 <br>
+                            <h3>Question 5: How consistent are you on a daily basis?</h3>
+                            <input type="radio" name="q5" value="1" class="numbers"> 1 <br>
+                            <input type="radio" name="q5" value="2" class="numbers"> 2 <br>
+                            <input type="radio" name="q5" value="3" class="numbers"> 3 <br>
+                            <input type="radio" name="q5" value="4" class="numbers"> 4 <br>
+                            <input type="radio" name="q5" value="5" class="numbers"> 5 <br>
                         </fieldset>
-
-                    </form>
 
                     <br>
 
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary btn-md submitbtn" id="add-btn" href="/api">Submit</button>
+                        <button type="submit" class="btn btn-primary btn-md submitbtn" id="add-btn">Submit</button>
                     </div>
+
+                    </form>
 
             </div>
 
-            <div id="myModal" class="modal" id="chosenWorkout">
+            <div class="modal" id="chosenWorkout">
                 <div class="modal-content" id="workoutPopup">
                     <span class="close">&times;</span>
                     <p>Here's your workout!</p>

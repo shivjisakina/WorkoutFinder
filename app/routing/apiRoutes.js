@@ -25,46 +25,59 @@ module.exports = function (app) {
 
     app.post('/api/workouts', function (req, res) {
 
-        console.log(req.body.name);
-        console.log(req.body.scores.length);
+        //console.log(scores)
+
+        //console.log(req.body);
+
+        console.log(workouts)
 
         var results = {};
         var differenceCalc = 100;
 
         // Looping through the object
+        var scores = [parseInt(req.body.q1), parseInt(req.body.q2), parseInt(req.body.q3), parseInt(req.body.q4), parseInt(req.body.q5)];
+
+        //console.log(req.body)
+
         for (var i = 0; i < workouts.length; i++) {
 
             var subtractArray = [];
+
             var difference = 0;
 
             // Looping through the score and making sure there's no negative numbers
             for (var j = 0; j < workouts[i].scores.length; j++) {
-                subtractArray.push(Math.abs(req.body.scores[j] - workouts[i].scores[j]))
+                subtractArray.push(Math.abs(scores[j] - workouts[i].scores[j]))
             }
 
-            console.log(subtractArray);
+            //console.log(subtractArray);
 
             for (var k = 0; k < subtractArray.length; k++) {
                 difference += subtractArray[k];
             }
 
-            console.log(difference);
+            //console.log(difference);
 
             if (results == {}) {
-                results= workouts[i];
+                results = workouts[i];
                 differenceCalc = difference;
             } else if (difference < differenceCalc) {
                 results = workouts[i];
                 differenceCalc = difference;
             }
 
-            console.log(difference);
+            //console.log(difference);
+
         }
 
-        // Pushing results
-        console.log("results" + results.name)
-        workouts.push(req.body);
-        res.json(results)
+            // Pushing results
+            //console.log("results" + results.name);
+
+            var data = {name: req.body.name, image: req.body.image, scores: scores}
+
+            workouts.push(data);
+            res.json(results)
+
 
     });
 

@@ -11,6 +11,7 @@ var app = express();
 
 // Using body-parser to parse user input
 app.use(bodyParser.urlencoded({extended: false}));
+
 //app.use(methodOverride('_method'));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/vnd.api+json'}));

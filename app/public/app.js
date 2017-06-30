@@ -1,22 +1,26 @@
 // Document ready function
-$( document ).ready(function() {
+$(document).ready(function() {
     console.log("ready!");
 
     // What the browser does when the submit button is clicked
-    $(document).on("click", "#submitbtn", function () {
+    $(".workoutForm").on("submit", function (e) {
+
+         e.preventDefault();
 
         // Setting the user input = to an empty array
          var userInput = [];
 
-         var answersPush = {
+        var answersPush = {
          name: $('#name').val().trim(),
-         image: $('#picture').val().trim(),
-         scores: userAnswers
+         image: $('#photo').val().trim(),
+         q1: $('input[name=q1]:checked').val(),
+         q2: $('input[name=q2]:checked').val(),
+         q3: $('input[name=q3]:checked').val(),
+         q4: $('input[name=q4]:checked').val(),
+         q5: $('input[name=q5]:checked').val()
          };
 
          console.log(answersPush);
-         console.log(userInput)
-
 
          // Trying to push the information to the endpoint and showing the modal
          $.post("/api/workouts", answersPush, function(data) {
