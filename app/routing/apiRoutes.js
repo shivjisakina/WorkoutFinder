@@ -17,7 +17,7 @@ var path = require('path');
 module.exports = function (app) {
 
     // getting the /api/workouts which will show the json objects
-    app.get('/api/workouts', function(req, res){
+    app.get('/api/workouts', function (req, res) {
 
         res.json(workouts);
 
@@ -64,17 +64,17 @@ module.exports = function (app) {
 
         }
 
-            // Pushing results
-            console.log("results " + results.name);
+        // Pushing results
+        console.log("results " + results.name);
 
-            var data = {name: req.body.name, image: req.body.image, scores: scores}
+        // Setting the format for the data because I was getting two arrays for scores
+        var data = {name: req.body.name, image: req.body.image, scores: scores}
 
-            workouts.push(data);
-            res.json(results)
+        workouts.push(data);
+        res.json(results)
 
 
     });
 
 
-
-    }
+}

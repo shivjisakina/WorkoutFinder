@@ -1,4 +1,3 @@
-
 // Storing the npm packages in variables
 var path = require('path');
 var bodyParser = require('body-parser');
@@ -14,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 //app.use(methodOverride('_method'));
 app.use(bodyParser.text());
-app.use(bodyParser.json({ type: 'application/vnd.api+json'}));
+app.use(bodyParser.json({type: 'application/vnd.api+json'}));
 
 // Use all of the static files in the public folder
 app.use(express.static('app/public'));
@@ -24,6 +23,6 @@ require('./app/routing/htmlRoutes.js')(app);
 require('./app/routing/apiRoutes.js')(app);
 
 // Listening to the port
-app.listen(PORT, function() {
+app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
 })
