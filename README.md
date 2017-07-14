@@ -19,7 +19,7 @@ Because staring at gym equipment doesnt burn calories (wouldnt that be nice thou
 * Node JS
 * NPM Packages (Body-Parser, Express, Path)
 
-## Link: https://fathomless-beyond-24344.herokuapp.com/
+### Link: https://fathomless-beyond-24344.herokuapp.com/
 
 
 ### Pseudo code that I used throughout the development process:
