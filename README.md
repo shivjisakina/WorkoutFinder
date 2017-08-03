@@ -1,7 +1,5 @@
 # WorkoutFinder
 
-Because staring at gym equipment doesnt burn calories (wouldnt that be nice though?).
-
 ## [5 Reasons to Switch Up Your Workout](http://www.onemedical.com/blog/live-well/7-reasons-to-switch-up-your-workout/) 
 
 1. Break Through a Weight-Loss Plateau
